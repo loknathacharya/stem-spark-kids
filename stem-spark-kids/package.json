@@ -1,21 +1,18 @@
 {
-  "name": "stem-spark-kids",
-  "private": true,
-  "version": "0.0.0",
+  "name": "gemini-proxy-server",
+  "version": "1.0.0",
+  "description": "A proxy server for Gemini API",
+  "main": "server.js",
   "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "node server.js"
   },
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "@google/genai": "^1.4.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.14.0",
-    "typescript": "~5.7.2",
-    "vite": "^6.2.0"
+    "@google/generative-ai": "^0.1.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
   }
 }
